@@ -1,0 +1,48 @@
+{
+  "navigation": {
+    "title": "Portfolio.exe",
+    "home": "Inicio",
+    "projects": "Proyectos"
+  },
+  "hero": {
+    "greeting": "Hola, mi nombre es",
+    "name": "Alcalde, Alejo Emanuel.",
+    "subtitle": "Estudiante y Full-Stack developer.",
+    "description": "Estudiante de Ingeniería en Sistemas de la Información enfocado en el ecosistema Java, arquitectura de software y ciberseguridad. Transformo ideas en sistemas funcionales."
+  },
+  "projectsSection": {
+    "title": "Proyectos Destacados",
+    "items": [
+        {
+        "id": "tpi-backend",
+        "title": "Trabajo Práctico Integrador - Backend",
+        "subtitle": "Proyecto de investigación personal",
+        "description": "Sistema backend para monitoreo de vulnerabilidades integrado con APIs externas y generación de reportes con IA.",
+        "techStack": ["Java", "Spring Boot", "MySQL", "Microservicios"],
+        "category": "Proyecto Principal",
+        "linkUrl": "",
+        "githubUrl": "https://github.com/mayex-gif/TPI-BACKEND/tree/refactoring"
+      },
+      {
+        "id": "cve-tracker",
+        "title": "CVE Vulnerability Tracker",
+        "subtitle": "Proyecto de investigación personal",
+        "description": "Sistema backend para monitoreo de vulnerabilidades integrado con APIs externas y generación de reportes con IA.",
+        "techStack": ["Java", "Spring Boot", "Cloud"],
+        "category": "Proyecto Principal",
+        "linkUrl": "",
+        "githubUrl": "https://github.com/mayex-gif/cve_tracker"
+      },
+      {
+        "id": "roca-blanca",
+        "title": "Roca Blanca",
+        "subtitle": "Proyecto de investigación personal",
+        "description": "Plataforma de gestión y ventas con base de datos relacional.",
+        "techStack": ["React", "MySQL"],
+        "category": "Full-Stack Web",
+        "linkUrl": "https://roca-blanca.com",
+        "githubUrl": "https://github.com/mayex-gif/Roca-Blanca"
+      }
+    ]
+  }
+}
