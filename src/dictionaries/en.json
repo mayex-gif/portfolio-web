@@ -1,47 +1,142 @@
 {
-  "navigation": {
+  "navbar": {
     "title": "Portfolio.exe",
     "home": "Inicio",
-    "projects": "Proyectos"
+    "education": "Educación",
+    "certifications": "Certificaciones",
+    "interests": "Intereses"
   },
   "hero": {
-    "greeting": "Hola, mi nombre es",
-    "name": "Alcalde, Alejo Emanuel.",
-    "subtitle": "Estudiante y Full-Stack developer.",
-    "description": "Estudiante de Ingeniería en Sistemas de la Información enfocado en el ecosistema Java, arquitectura de software y ciberseguridad. Transformo ideas en sistemas funcionales."
+    "greeting": "Bienvenidos, mi nombre es",
+    "name": "Alcalde, Alejo Emanuel",
+    "subtitle": "Desarrollador de Software Full-Stack Jr / Estudiante de Ingeniería en Sistemas de la Información",
+    "description": "Estudiante de 3er año de Ingeniería en Sistemas (UTN - FRC), con sólida base en desarrollo web full-stack y experiencia en proyectos académicos y personales. Me interesa aplicar buenas prácticas, metodologías ágiles ytecnologías modernas para crear soluciones escalables. Busco miprimera experiencia profesional en el área IT para seguir creciendo yaportar valor en equipos de desarrollo."
   },
-  "projectsSection": {
-    "title": "Proyectos Destacados",
+  "projects": {
     "items": [
-        {
-        "id": "tpi-backend",
-        "title": "Trabajo Práctico Integrador - Backend",
-        "subtitle": "Proyecto de investigación personal",
-        "description": "Sistema backend para monitoreo de vulnerabilidades integrado con APIs externas y generación de reportes con IA.",
-        "techStack": ["Java", "Spring Boot", "MySQL", "Microservicios"],
-        "category": "Proyecto Principal",
-        "linkUrl": "",
-        "githubUrl": "https://github.com/mayex-gif/TPI-BACKEND/tree/refactoring"
+      {
+        "id": "roca-blanca-desktop",
+        "title": "CVE Tracker",
+        "description": "Monitoreo de vulnerabilidades en tiempo real usando Spring Boot y la API de NVD.",
+        "techStack": ["Java", "Spring Boot", "Gemini AI", "MySQL"],
+        "linkUrlLabel": "Ver App",
+        "githubUrlLabel": "Código Fuente",
+        "githubUrl": "https://github.com/...",
+        "category": "Cybersecurity"
       },
       {
-        "id": "cve-tracker",
-        "title": "CVE Vulnerability Tracker",
-        "subtitle": "Proyecto de investigación personal",
-        "description": "Sistema backend para monitoreo de vulnerabilidades integrado con APIs externas y generación de reportes con IA.",
-        "techStack": ["Java", "Spring Boot", "Cloud"],
-        "category": "Proyecto Principal",
-        "linkUrl": "",
-        "githubUrl": "https://github.com/mayex-gif/cve_tracker"
-      },
-      {
-        "id": "roca-blanca",
+        "id": "roca-blanca-phone",
         "title": "Roca Blanca",
-        "subtitle": "Proyecto de investigación personal",
-        "description": "Plataforma de gestión y ventas con base de datos relacional.",
-        "techStack": ["React", "MySQL"],
-        "category": "Full-Stack Web",
-        "linkUrl": "https://roca-blanca.com",
-        "githubUrl": "https://github.com/mayex-gif/Roca-Blanca"
+        "description": "Monitoreo de vulnerabilidades en tiempo real usando Spring Boot y la API de NVD.",
+        "techStack": ["Java", "Spring Boot", "Gemini AI", "MySQL"],
+        "linkUrlLabel": "Ver App",
+        "githubUrlLabel": "Código Fuente",
+        "githubUrl": "https://github.com/...",
+        "category": "Desarrollo Web Full-Stack"
+      },
+      {
+        "id": "my-portfolio-web",
+        "title": "My Portfolio Web",
+        "description": "Monitoreo de vulnerabilidades en tiempo real usando Spring Boot y la API de NVD.",
+        "techStack": ["Java", "Spring Boot", "Gemini AI", "MySQL"],
+        "linkUrlLabel": "Ver App",
+        "githubUrlLabel": "Código Fuente",
+        "githubUrl": "https://github.com/...",
+        "category": "Desarrollo Web Full-Stack"
+      },
+      {
+        "id": "roca-blanca2",
+        "title": "CVE Tracker",
+        "description": "Monitoreo de vulnerabilidades en tiempo real usando Spring Boot y la API de NVD.",
+        "techStack": ["Java", "Spring Boot", "Gemini AI", "MySQL"],
+        "linkUrlLabel": "Ver App",
+        "githubUrlLabel": "Código Fuente",
+        "githubUrl": "https://github.com/...",
+        "category": "Cybersecurity"
+      },
+      {
+        "id": "2",
+        "title": "CVE Tracker",
+        "description": "Monitoreo de vulnerabilidades en tiempo real usando Spring Boot y la API de NVD.",
+        "techStack": ["Java", "Spring Boot", "Gemini AI", "MySQL"],
+        "linkUrlLabel": "Ver App",
+        "githubUrlLabel": "Código Fuente",
+        "githubUrl": "https://github.com/...",
+        "category": "Cybersecurity"
+      },
+      {
+        "id": "roca-blanca3",
+        "title": "CVE Tracker",
+        "description": "Monitoreo de vulnerabilidades en tiempo real usando Spring Boot y la API de NVD.",
+        "techStack": ["Java", "Spring Boot", "Gemini AI", "MySQL"],
+        "linkUrlLabel": "Ver App",
+        "githubUrlLabel": "Código Fuente",
+        "githubUrl": "https://github.com/...",
+        "category": "Cybersecurity"
+      }
+    ]
+  },
+  "info": {
+    "infoItems": [
+      {
+        "id": "01",
+        "title": "Educación",
+        "items": [
+          {
+            "id": "1",
+            "title": "UTN - Facultad Regional Córdoba",
+            "year": "2021 - Presente",
+            "linkLabel": "Ver Carrera",
+            "linkUrl": "https://www.frc.utn.edu.ar/"
+          },
+          {
+            "id": "2",
+            "title": "Curso de Desarrollo Web Full-Stack - Coderhouse",
+            "year": "2023",
+            "linkLabel": "Ver Certificado",
+            "linkUrl": "https://www.coderhouse.com/certificados/..."
+          }
+        ]
+      },
+      {
+        "id": "02",
+        "title": "Certificaciones",
+        "items": [
+          {
+            "id": "1",
+            "title": "Certificación en Desarrollo Web Full-Stack - Coderhouse",
+            "year": "2023",
+            "linkLabel": "Ver Certificado",
+            "linkUrl": "https://www.coderhouse.com/certificados/..."
+          },
+          {
+            "id": "2",
+            "title": "Certificación en Java y Spring Boot - Coderhouse",
+            "year": "2023",
+            "linkLabel": "Ver Certificado",
+            "linkUrl": "https://www.coderhouse.com/certificados/..."
+          }
+        ]
+      },
+      {
+        "id": "03",
+        "title": "Intereses",
+        "items": [
+          {
+            "id": "1",
+            "title": "Ciberseguridad y Ethical Hacking",
+            "year": "Continuo",
+            "linkLabel": "Seguimiento CVE",
+            "linkUrl": "#"
+          },
+          {
+            "id": "2",
+            "title": "Desarrollo Backend con Java / Spring",
+            "year": "Continuo",
+            "linkLabel": "Ver Repositorios",
+            "linkUrl": "#"
+          }
+        ]
       }
     ]
   }

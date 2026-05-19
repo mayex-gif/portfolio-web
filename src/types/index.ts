@@ -1,16 +1,47 @@
-// src/types/index.tsx
+// src/types/index.ts
 
-// Definiciones de qué forma tienen tus datos
-export interface Project {
+export interface NavbarData {
+  title: string;
+  home: string;
+  education: string;
+  certifications: string;
+  interests: string;
+}
+
+export interface HeroData {
+  greeting: string;
+  name: string;
+  subtitle: string;
+  description: string;
+}
+
+export interface ProjectItem {
   id: string;
   title: string;
   description: string;
   techStack: string[];
+  linkUrlLabel: string;
   linkUrl?: string; // El "?" significa que es opcional
+  githubUrlLabel: string;
   githubUrl?: string;
-  category: 'Web' | 'Security' | 'Hardware'; 
+  category: string;
 }
 
-export interface PortfolioData {
-  projects: Project[];
+export interface ProjectsData {
+  items: ProjectItem[];
 }
+
+export interface InfoItem {
+  id: string;
+  title: string;
+  year: string;
+  linkLabel: string;
+  linkUrl?: string;
+}
+
+export interface InfoData {
+  id: string;
+  title: string;
+  items: InfoItem[];
+}
+  

@@ -1,27 +1,29 @@
-import esDict from '@/dictionaries/es.json';
-import enDict from '@/dictionaries/en.json';
-import HeroSection from '@/components/sections/HeroSection';
-import ProjectsBento from '@/components/sections/ProjectsBento';
+import { getDictionary } from "@/dictionaries";
+import Navbar from "@/components/layout/Navbar";
+import HeroSection from "@/components/sections/HeroSection";
+import InfoSection from "@/components/sections/InfoSection";
 
-type Props = {
-  params: Promise<{ lang: string }>;
-};
+interface PageProps {
+  params: Promise<{ lang: "en" | "es" }>;
+}
 
-export default async function HomePage({ params }: Props) {
+export default async function Page({ params }: PageProps) {
   const { lang } = await params;
-  const dict = lang === 'en' ? enDict : esDict;
+  const dict = await getDictionary(lang);
 
   return (
-    <main className="flex flex-col min-h-screen bg-gray-950 text-gray-200">
-      
-      {/* Le pasamos solo la parte del JSON que el Hero necesita */}
-      <HeroSection data={dict.hero} />
+    <main className="flex flex-col items-center min-h-screen bg-gray-950 text-white selection:bg-green-500/30">
 
-      {/* Le pasamos la lista de proyectos */}
-      <ProjectsBento data={dict.projectsSection} />
+      {/* Navbar arriba inyectando datos y el idioma actual */}
+      <Navbar navbarData={dict.navbar} lang={lang} />
 
-      {/* Aquí irían tus otras secciones */}
+      {/* Contenedor principal de secciones */}
+      <HeroSection heroData={dict.hero} projectsData={dict.projects} />
 
+      {/* Las próximas secciones irán acá abajo */}
+      <InfoSection infoData={dict.info.infoItems} />
+
+      {/* <Footer footerData={dict.footer} /> */}
     </main>
   );
 }
