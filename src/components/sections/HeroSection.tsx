@@ -10,15 +10,15 @@ interface HeroSectionProps {
 
 export default function HeroSection({ heroData, projectsData }: HeroSectionProps) {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 gap-12 min-h-[200vh] md:min-h-[100vh] w-full">
+    <section className="grid grid-cols-1 md:grid-cols-2 gap-12 min-h-[200vh] md:min-h-[100vh] w-full pt-24 md:pt-0">
       
       {/* Columna Izquierda: Tu Info */}
-      <div className="flex flex-col justify-center px-8 md:px-24 min-h-[100vh]">
+      <div className="flex flex-col justify-center px-8 md:px-10 min-h-[100vh]">
         <p className="text-green-500 font-mono mb-4">{heroData.greeting}</p>
-        <h1 className="text-4xl md:text-6xl font-bold text-white mb-2">{heroData.name}</h1>
+        <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-white mb-2">{heroData.name}</h1>
         {/* Agregado el subtítulo que faltaba renderizar */}
-        <h2 className="text-xl md:text-2xl font-medium text-gray-300 mb-6">{heroData.subtitle}</h2>
-        <p className="text-lg text-gray-500 max-w-2xl">{heroData.description}</p>
+        <h2 className="text-xl md:text-2xl lg:text-2xl font-medium text-gray-300 mb-6">{heroData.subtitle}</h2>
+        <p className="lg:text-lg text-gray-500 max-w-2xl">{heroData.description}</p>
       </div>
 
       {/* Columna Derecha: Carousel de Proyectos */}
@@ -36,7 +36,11 @@ export default function HeroSection({ heroData, projectsData }: HeroSectionProps
                   e.currentTarget.src = "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=800";
                 }}
               />
-              <div>
+            
+              {/* CAPA DE DEGRADADO: Se superpone a la imagen y se funde con el fondo abajo */}
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gray-950/0 to-gray-950 z-10 pointer-events-none" />
+
+              <div className="relative z-20 w-full">
                 <span className="text-xs font-mono text-green-400 uppercase tracking-wider">{project.category}</span>
                 <h4 className="text-2xl font-bold text-white mb-2">{project.title}</h4>
                 <p className="text-gray-400 text-sm mb-3">{project.description}</p>
@@ -46,6 +50,18 @@ export default function HeroSection({ heroData, projectsData }: HeroSectionProps
                       {tech}
                     </span>
                   ))}
+                </div>
+                <div className="mt-4 flex gap-4">
+                  {project.githubUrl && (
+                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="text-sm font-mono text-gray-300 hover:text-green-400 underline underline-offset-4 decoration-gray-300/30 hover:decoration-green-400 transition-all">
+                      {project.githubUrlLabel}
+                    </a>
+                  )}
+                  {project.linkUrl && (
+                    <a href={project.linkUrl} target="_blank" rel="noopener noreferrer" className="ml-4 text-sm font-mono text-gray-300 hover:text-green-400 underline underline-offset-4 decoration-gray-300/30 hover:decoration-green-400 transition-all" >
+                      {project.linkUrlLabel || "Ver Enunciado"}
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

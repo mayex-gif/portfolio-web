@@ -21,3 +21,31 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@layer utilities {
+  .liquid-glass {
+    /* bg-transparent */
+    background-color: transparent; 
+    
+    /* backdrop-blur-md */
+    backdrop-filter: blur(var(--blur-md));
+    /*-webkit-backdrop-filter: blur(var(--blur-md));*/ /* Soporte para Safari / iOS */
+    
+    /* border-b border-gray-900 */
+    border-bottom: 1px solid theme('colors.gray.900');
+    
+    /* Extra Pro: Un sutil degradado de fondo oscuro para que el texto nunca pierda contraste */
+    background-image: linear-gradient(
+      to bottom, 
+      rgba(3, 7, 18, 0.4), 
+      rgba(3, 7, 18, 0.2)
+    );
+  }
+  /* Podés crear variaciones si querés, por ejemplo una con tono verde neón */
+  .liquid-glass-green {
+    background-color: rgba(4, 47, 31, 0.2); 
+    backdrop-filter: blur(var(--blur-md));
+    /*-webkit-backdrop-filter: blur(var(--blur-md));*/ /* Soporte para Safari / iOS */
+    border: 1px solid rgba(74, 222, 128, 0.1);
+  }
+}

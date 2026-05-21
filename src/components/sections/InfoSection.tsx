@@ -6,7 +6,7 @@ interface InfoSectionProps {
 
 export default function InfoSection({ infoData }: InfoSectionProps) {
     return (
-        <div className="w-full space-y-16 py-10">
+        <div className="w-full space-y-16 pt-10">
             {infoData.map((section) => (
                 <section key={section.id} className="flex flex-col px-8 md:px-24 my-20">
 
@@ -26,28 +26,27 @@ export default function InfoSection({ infoData }: InfoSectionProps) {
                         {section.items.map((item) => (
                             <div
                                 key={item.id}
-                                className="bg-gray-900 border border-gray-800/60 p-6 rounded-xl hover:border-green-500/30 transition-all duration-300 flex flex-col justify-between group"
+                                className="bg-gray-900 border border-gray-800/60 p-6 rounded-md hover:border-green-500/30 transition-all duration-300 flex flex-col justify-between group"
                             >
                                 <div>
                                     <div className="text-xs font-mono text-gray-500 mb-2">{item.year}</div>
                                     <h4 className="text-xl font-bold text-white mb-4 group-hover:text-green-400 transition-colors">
                                         {item.title}
                                     </h4>
+                                    <p className="text-gray-400 text-sm">{item.description}</p>
                                 </div>
 
-                                {/* Enlace opcional (solo si existe linkUrl) */}
-                                {item.linkUrl && (
-                                    <div className="mt-4">
-                                        <a
-                                            href={item.linkUrl}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="text-sm font-mono text-green-500 hover:text-green-400 underline underline-offset-4 decoration-green-500/30 hover:decoration-green-400 transition-all"
-                                        >
-                                            {item.linkLabel || "Ver más →"}
-                                        </a>
-                                    </div>
-                                )}
+                                <div className="mt-4">
+                                    <a
+                                        // Si item.linkUrl existe, usa ese link; si no, construye la ruta a la imagen local
+                                        href={item.linkUrl ? item.linkUrl : `/images/${item.id}.png`}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-sm font-mono text-green-500 hover:text-green-400 underline underline-offset-4 decoration-green-500/30 hover:decoration-green-400 transition-all"
+                                    >
+                                        {item.linkLabel}
+                                    </a>
+                                </div>
                             </div>
                         ))}
                     </div>

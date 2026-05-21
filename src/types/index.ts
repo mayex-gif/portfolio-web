@@ -35,6 +35,7 @@ export interface InfoItem {
   id: string;
   title: string;
   year: string;
+  description?: string;
   linkLabel: string;
   linkUrl?: string;
 }
@@ -43,5 +44,17 @@ export interface InfoData {
   id: string;
   title: string;
   items: InfoItem[];
+}
+
+export interface FooterData {
+  title: string;
+  subtitle: string;
+  buttonLabel: string;
+  email: string;
+  githubLabel: string;
+  githubUrl: string;
+  linkedinLabel: string;
+  linkedinUrl: string;
+  copyright: string;
 }
   

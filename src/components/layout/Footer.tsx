@@ -1,16 +1,50 @@
-import React from 'react';
+import { FooterData } from "@/types";
 
-const Footer: React.FC = () => {
+interface FooterSectionProps {
+  footerData: FooterData;
+}
+
+export default function Footer({ footerData }: FooterSectionProps) {
   return (
-    <nav style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '1rem', backgroundColor: '#333', color: '#fff'}}>
-      <div>
-        <a href="#home" style={{ margin: '0 1rem', color: '#fff', textDecoration: 'none' }}>Home</a>
-        <a href="#about" style={{ margin: '0 1rem', color: '#fff', textDecoration: 'none' }}>About</a>
-        <a href="#projects" style={{ margin: '0 1rem', color: '#fff', textDecoration: 'none' }}>Projects</a>
-        <a href="#contact" style={{ margin: '0 1rem', color: '#fff', textDecoration: 'none' }}>Contact</a>
-      </div>
-    </nav>
-  );
-};
+    <footer className="w-full border-t border-gray-800 liquid-glass bg-gray-950/40 py-12 px-8 md:px-24 mt-5">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+        
+        {/* Izquierda: Texto de llamada a la acción */}
+        <div className="max-w-md">
+          <h4 className="text-2xl font-bold text-white mb-2 font-mono tracking-wide">
+            {footerData.title}
+          </h4>
+          <p className="text-gray-400 text-sm">
+            {footerData.subtitle}
+          </p>
+        </div>
 
-export default Footer;
+        {/* Derecha: Botón de Email y Enlaces a Redes */}
+        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
+          <a 
+            href={`mailto:${footerData.email}`}
+            className="bg-green-500 hover:bg-green-400 text-gray-950 font-bold px-5 py-3 rounded-lg text-sm font-mono transition-colors shadow-lg shadow-green-500/10"
+          >
+            {footerData.buttonLabel}
+          </a>
+
+          <div className="flex gap-4 font-mono text-sm">
+            <a href={footerData.githubUrl} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-green-400 transition-colors">
+              {footerData.githubLabel}
+            </a>
+            <span className="text-gray-800">|</span>
+            <a href={footerData.linkedinUrl} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-green-400 transition-colors">
+              {footerData.linkedinLabel}
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      {/* Línea inferior de Copyright */}
+      <div className="max-w-7xl mx-auto border-t border-gray-900 mt-12 pt-6 text-center md:text-left text-xs font-mono text-gray-500">
+        {footerData.copyright}
+      </div>
+    </footer>
+  );
+}

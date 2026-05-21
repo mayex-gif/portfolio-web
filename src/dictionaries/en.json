@@ -1,78 +1,82 @@
 {
   "navbar": {
     "title": "Portfolio.exe",
-    "home": "Inicio",
-    "education": "Educación",
-    "certifications": "Certificaciones",
-    "interests": "Intereses"
+    "home": "Home",
+    "education": "Education",
+    "certifications": "Certifications",
+    "interests": "Interests"
   },
   "hero": {
-    "greeting": "Bienvenidos, mi nombre es",
+    "greeting": "Welcome, my name is",
     "name": "Alcalde, Alejo Emanuel",
-    "subtitle": "Desarrollador de Software Full-Stack Jr / Estudiante de Ingeniería en Sistemas de la Información",
-    "description": "Estudiante de 3er año de Ingeniería en Sistemas (UTN - FRC), con sólida base en desarrollo web full-stack y experiencia en proyectos académicos y personales. Me interesa aplicar buenas prácticas, metodologías ágiles ytecnologías modernas para crear soluciones escalables. Busco miprimera experiencia profesional en el área IT para seguir creciendo yaportar valor en equipos de desarrollo."
+    "subtitle": "Jr. Full-Stack Software Developer",
+    "description": "Systems Engineering student (UTN - FRC). Focused on building scalable solutions using modern technologies and clean code practices. Seeking my first professional opportunity in the IT industry to contribute value and accelerate my technical growth."
   },
   "projects": {
     "items": [
       {
-        "id": "roca-blanca-desktop",
-        "title": "CVE Tracker",
-        "description": "Monitoreo de vulnerabilidades en tiempo real usando Spring Boot y la API de NVD.",
-        "techStack": ["Java", "Spring Boot", "Gemini AI", "MySQL"],
-        "linkUrlLabel": "Ver App",
+        "id": "tpi-backend",
+        "title": "TPI - Backend de Aplicaciones",
+        "description": "Diseño e implementación de un ecosistema de microservicios e infraestructura cloud (Spring Cloud Gateway, Keycloak, OSRM, MySQL) para la gestión y ruteo inteligente de solicitudes logísticas, aplicando patrones de arquitectura distribuida y seguridad centralizada basada en tokens.",
+        "techStack": [
+          "Java",
+          "Spring Boot",
+          "Keycloak",
+          "OSRM",
+          "JWT",
+          "Docker",
+          "MySQL Workbench"
+        ],
+        "linkUrlLabel": "Ver Enunciado",
+        "linkUrl": "/docs/Enunciado TPI - 2025.pdf",
         "githubUrlLabel": "Código Fuente",
-        "githubUrl": "https://github.com/...",
-        "category": "Cybersecurity"
+        "githubUrl": "https://github.com/mayex-gif/TPI-BACKEND",
+        "category": "TPI Universitario"
+      },
+      {
+        "id": "roca-blanca-desktop",
+        "title": "Roca Blanca",
+        "description": "Aplicación web full-stack para negocio de venta de ropa.",
+        "techStack": [
+          "React",
+          "Bootstrap",
+          "MySQL"
+        ],
+        "linkUrlLabel": "Ver App",
+        "linkUrl": "https://mayex-gif.github.io/Roca-Blanca/",
+        "githubUrlLabel": "Código Fuente",
+        "githubUrl": "https://github.com/mayex-gif/Roca-Blanca",
+        "category": "Desarrollo Web Full-Stack"
       },
       {
         "id": "roca-blanca-phone",
         "title": "Roca Blanca",
-        "description": "Monitoreo de vulnerabilidades en tiempo real usando Spring Boot y la API de NVD.",
-        "techStack": ["Java", "Spring Boot", "Gemini AI", "MySQL"],
+        "description": "",
+        "techStack": [
+          "React",
+          "Bootstrap",
+          "MySQL"
+        ],
         "linkUrlLabel": "Ver App",
+        "linkUrl": "https://mayex-gif.github.io/Roca-Blanca/",
         "githubUrlLabel": "Código Fuente",
-        "githubUrl": "https://github.com/...",
+        "githubUrl": "https://github.com/mayex-gif/Roca-Blanca",
         "category": "Desarrollo Web Full-Stack"
       },
       {
-        "id": "my-portfolio-web",
-        "title": "My Portfolio Web",
-        "description": "Monitoreo de vulnerabilidades en tiempo real usando Spring Boot y la API de NVD.",
-        "techStack": ["Java", "Spring Boot", "Gemini AI", "MySQL"],
-        "linkUrlLabel": "Ver App",
-        "githubUrlLabel": "Código Fuente",
-        "githubUrl": "https://github.com/...",
-        "category": "Desarrollo Web Full-Stack"
-      },
-      {
-        "id": "roca-blanca2",
+        "id": "cve-tracker-desktop",
         "title": "CVE Tracker",
-        "description": "Monitoreo de vulnerabilidades en tiempo real usando Spring Boot y la API de NVD.",
-        "techStack": ["Java", "Spring Boot", "Gemini AI", "MySQL"],
+        "description": "Un motor automatizado de Inteligencia de Amenazas (Threat Intelligence) que rastrea vulnerabilidades globales en tiempo real y emite alertas tempranas personalizadas a los usuarios según sus intereses tecnológicos.",
+        "techStack": [
+          "Java",
+          "Spring Boot",
+          "MySQL Workbench"
+        ],
         "linkUrlLabel": "Ver App",
+        "linkUrl": "",
         "githubUrlLabel": "Código Fuente",
-        "githubUrl": "https://github.com/...",
-        "category": "Cybersecurity"
-      },
-      {
-        "id": "2",
-        "title": "CVE Tracker",
-        "description": "Monitoreo de vulnerabilidades en tiempo real usando Spring Boot y la API de NVD.",
-        "techStack": ["Java", "Spring Boot", "Gemini AI", "MySQL"],
-        "linkUrlLabel": "Ver App",
-        "githubUrlLabel": "Código Fuente",
-        "githubUrl": "https://github.com/...",
-        "category": "Cybersecurity"
-      },
-      {
-        "id": "roca-blanca3",
-        "title": "CVE Tracker",
-        "description": "Monitoreo de vulnerabilidades en tiempo real usando Spring Boot y la API de NVD.",
-        "techStack": ["Java", "Spring Boot", "Gemini AI", "MySQL"],
-        "linkUrlLabel": "Ver App",
-        "githubUrlLabel": "Código Fuente",
-        "githubUrl": "https://github.com/...",
-        "category": "Cybersecurity"
+        "githubUrl": "https://github.com/mayex-gif/cve_tracker",
+        "category": "Ciberseguridad"
       }
     ]
   },
@@ -84,17 +88,18 @@
         "items": [
           {
             "id": "1",
-            "title": "UTN - Facultad Regional Córdoba",
-            "year": "2021 - Presente",
+            "title": "Universidad Tecnológica Nacional - Facultad Regional Córdoba",
+            "description": "Ingeniería en Sistemas de Información.",
+            "year": "2022 - Actualidad",
             "linkLabel": "Ver Carrera",
-            "linkUrl": "https://www.frc.utn.edu.ar/"
+            "linkUrl": "https://www.institucional.frc.utn.edu.ar/sistemas/"
           },
           {
-            "id": "2",
-            "title": "Curso de Desarrollo Web Full-Stack - Coderhouse",
-            "year": "2023",
-            "linkLabel": "Ver Certificado",
-            "linkUrl": "https://www.coderhouse.com/certificados/..."
+            "id": "Instituto-Superior-Manuel-de-Falla",
+            "title": "Instituto Superior Manuel de Falla",
+            "description": "Técnico en Programación.",
+            "year": "2015 - 2021",
+            "linkLabel": "Ver Certificado"
           }
         ]
       },
@@ -103,18 +108,25 @@
         "title": "Certificaciones",
         "items": [
           {
-            "id": "1",
-            "title": "Certificación en Desarrollo Web Full-Stack - Coderhouse",
-            "year": "2023",
-            "linkLabel": "Ver Certificado",
-            "linkUrl": "https://www.coderhouse.com/certificados/..."
+            "id": "web-full-stack-utn-ba",
+            "title": "Web Full-Stack - UTN BA",
+            "description": "",
+            "year": "2024",
+            "linkLabel": "Ver Certificado"
           },
           {
-            "id": "2",
-            "title": "Certificación en Java y Spring Boot - Coderhouse",
+            "id": "yoprogramo",
+            "title": "#YoProgramo - Mumuki",
+            "description": "",
             "year": "2023",
-            "linkLabel": "Ver Certificado",
-            "linkUrl": "https://www.coderhouse.com/certificados/..."
+            "linkLabel": "Ver Certificado"
+          },
+          {
+            "id": "seprogramar",
+            "title": "#SéProgramar - Mumuki",
+            "description": "",
+            "year": "2022",
+            "linkLabel": "Ver Certificado"
           }
         ]
       },
@@ -123,21 +135,39 @@
         "title": "Intereses",
         "items": [
           {
-            "id": "1",
-            "title": "Ciberseguridad y Ethical Hacking",
-            "year": "Continuo",
-            "linkLabel": "Seguimiento CVE",
-            "linkUrl": "#"
+            "id": "Instalador-Electrico-Habilitado",
+            "title": "Instalador Eléctrico Habilitado Cat. III",
+            "description": "Ministerio Desarrollo Social y Promoción del Empleo.",
+            "year": "Diciembre 2025",
+            "linkLabel": "Ver Matrícula"
           },
           {
-            "id": "2",
-            "title": "Desarrollo Backend con Java / Spring",
-            "year": "Continuo",
-            "linkLabel": "Ver Repositorios",
-            "linkUrl": "#"
+            "id": "riesgos-electricos",
+            "title": "Riesgos Eléctricos",
+            "description": "Superintendencia de Riesgos del Trabajo",
+            "year": "Octubre 2021",
+            "linkLabel": "Ver Certificado"
+          },
+          {
+            "id": "curso-fotografia",
+            "title": "Curso de fotografía",
+            "description": "Realizao en Villa La Bolsa, Córdoba.",
+            "year": "Abril 2019",
+            "linkLabel": "Ver Certificado"
           }
         ]
       }
     ]
+  },
+  "footer": {
+    "title": "Let's Talk!",
+    "subtitle": "I am available for my first professional experience in development or cybersecurity. If you have a proposal or just want to connect, don't hesitate to write to me.",
+    "buttonLabel": "Send an email",
+    "email": "alcaldealejo53@gmail.com",
+    "githubLabel": "GitHub",
+    "githubUrl": "https://github.com/mayex-gif",
+    "linkedinLabel": "LinkedIn",
+    "linkedinUrl": "https://www.linkedin.com/in/alejo-emanuel-alcalde-5a0314215/",
+    "copyright": "© 2026 Alcalde, Alejo Emanuel. Todos los derechos reservados."
   }
 }

@@ -2,6 +2,7 @@ import { getDictionary } from "@/dictionaries";
 import Navbar from "@/components/layout/Navbar";
 import HeroSection from "@/components/sections/HeroSection";
 import InfoSection from "@/components/sections/InfoSection";
+import Footer from "@/components/layout/Footer";
 
 interface PageProps {
   params: Promise<{ lang: "en" | "es" }>;
@@ -24,6 +25,7 @@ export default async function Page({ params }: PageProps) {
       <InfoSection infoData={dict.info.infoItems} />
 
       {/* <Footer footerData={dict.footer} /> */}
+      <Footer footerData={dict.footer}/>
     </main>
   );
 }
