@@ -24,15 +24,14 @@ export default function Carousel<T>({ items, renderItem }: CarouselProps<T>) {
 
   return (
     <div className="relative w-full h-full bg-gray-900 overflow-hidden group">
-      
+
       {/* Contenedor de Slides */}
       <div className="relative w-full h-full">
         {items.map((item, index) => (
           <div
             key={index}
-            className={`absolute inset-0 w-full h-full transition-opacity duration-700 ease-in-out ${
-              index === activeIndex ? "opacity-100 z-10" : "opacity-0 z-0 pointer-events-none"
-            }`}
+            className={`absolute inset-0 w-full h-full transition-opacity duration-700 ease-in-out ${index === activeIndex ? "opacity-100 z-10" : "opacity-0 z-0 pointer-events-none"
+              }`}
           >
             {/* Delegamos el renderizado al componente padre */}
             {renderItem(item, index)}
@@ -41,17 +40,26 @@ export default function Carousel<T>({ items, renderItem }: CarouselProps<T>) {
       </div>
 
       {/* Controles del Carrusel */}
+      {/* Botón Anterior */}
       <button
         onClick={prevSlide}
-        className="absolute top-1/2 left-4 -translate-y-1/2 z-30 p-2 rounded-full bg-gray-950/60 text-white border border-gray-800 hover:bg-gray-800 transition-colors opacity-0 group-hover:opacity-100"
+        // CLAVE: opacity-100 por defecto (celulares). En md:opacity-0 y md:group-hover:opacity-100 (PC)
+        // Le ponemos p-4 (padding grande) para que sea fácil darle con el dedo
+        className="absolute left-2 md:left-6 top-1/2 -translate-y-1/2 z-30 p-3 md:p-4 bg-gray-950/60 hover:bg-gray-900 rounded-full text-white backdrop-blur-md transition-all opacity-100 md:opacity-0 md:group-hover:opacity-100 border border-gray-800/50"
       >
-        ◀
+        <svg className="w-5 h-5 md:w-6 md:h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+        </svg>
       </button>
+
+      {/* Botón Siguiente */}
       <button
         onClick={nextSlide}
-        className="absolute top-1/2 right-4 -translate-y-1/2 z-30 p-2 rounded-full bg-gray-950/60 text-white border border-gray-800 hover:bg-gray-800 transition-colors opacity-0 group-hover:opacity-100"
+        className="absolute right-2 md:right-6 top-1/2 -translate-y-1/2 z-30 p-3 md:p-4 bg-gray-950/60 hover:bg-gray-900 rounded-full text-white backdrop-blur-md transition-all opacity-100 md:opacity-0 md:group-hover:opacity-100 border border-gray-800/50"
       >
-        ▶
+        <svg className="w-5 h-5 md:w-6 md:h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+        </svg>
       </button>
 
       {/* Indicadores de posición */}
@@ -60,9 +68,8 @@ export default function Carousel<T>({ items, renderItem }: CarouselProps<T>) {
           <button
             key={index}
             onClick={() => setActiveIndex(index)}
-            className={`w-2 h-2 rounded-full transition-all ${
-              index === activeIndex ? "bg-green-500 w-4" : "bg-gray-600"
-            }`}
+            className={`w-2 h-2 rounded-full transition-all ${index === activeIndex ? "bg-green-500 w-4" : "bg-gray-600"
+              }`}
           />
         ))}
       </div>

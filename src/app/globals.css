@@ -28,7 +28,7 @@ body {
     background-color: transparent; 
     
     /* backdrop-blur-md */
-    backdrop-filter: blur(var(--blur-sm));
+    backdrop-filter: blur(var(--blur-md));
     /*-webkit-backdrop-filter: blur(var(--blur-md));*/ /* Soporte para Safari / iOS */
     
     /* border-b border-gray-900 */
@@ -44,15 +44,32 @@ body {
   /* Podés crear variaciones si querés, por ejemplo una con tono verde neón */
   .liquid-glass-gray {
     background-color: rgba(16, 24, 40, 0.5); 
-    backdrop-filter: blur(var(--blur-sm));
+    backdrop-filter: blur(var(--blur-md));
     /*-webkit-backdrop-filter: blur(var(--blur-md));*/ /* Soporte para Safari / iOS ctx.fillStyle = "rgba(3, 7, 18, 0.1)"; // Coincide con tu bg-gray-950*/
     border: 1px solid theme('colors.gray.800');
   }
 
   .liquid-glass-green {
     background-color: rgba(31, 102, 29, 0.5); 
-    backdrop-filter: blur(var(--blur-sm));
+    backdrop-filter: blur(var(--blur-xs));
     /*-webkit-backdrop-filter: blur(var(--blur-md));*/ /* Soporte para Safari / iOS ctx.fillStyle = "rgba(3, 7, 18, 0.1)"; // Coincide con tu bg-gray-950*/
     border: 1px solid theme('colors.green.300');
+  }
+  
+  .animate-fade-up {
+    /* La animación dura 0.8s, usa un freno suave (ease-out) y se queda en su estado final (forwards) */
+    animation: fadeUp 0.8s ease-out forwards;
+    opacity: 0; /* Arranca invisible para que no parpadee antes del delay */
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

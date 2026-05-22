@@ -14,22 +14,22 @@ export default function HeroSection({ heroData, projectsData }: HeroSectionProps
       
       {/* Columna Izquierda: Tu Info */}
       <div className="flex flex-col justify-center px-8 md:px-10 min-h-[100vh]">
-        <p className="text-green-500 font-mono mb-4">{heroData.greeting}</p>
-        <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-white mb-2">{heroData.name}</h1>
+        <p className="text-green-500 font-mono mb-4 animate-fade-up" style={{ animationDelay: '100ms' }}>{heroData.greeting}</p>
+        <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-white mb-2 animate-fade-up" style={{ animationDelay: '300ms' }}>{heroData.name}</h1>
         {/* Agregado el subtítulo que faltaba renderizar */}
-        <h2 className="text-xl md:text-2xl lg:text-2xl font-medium text-gray-300 mb-6">{heroData.subtitle}</h2>
-        <p className="lg:text-lg text-gray-500 max-w-2xl">{heroData.description}</p>
+        <h2 className="text-xl md:text-2xl lg:text-2xl font-medium text-gray-300 mb-6 animate-fade-up" style={{ animationDelay: '500ms' }}>{heroData.subtitle}</h2>
+        <p className="lg:text-lg text-gray-500 max-w-2xl animate-fade-up" style={{ animationDelay: '700ms' }}>{heroData.description}</p>
       </div>
 
       {/* Columna Derecha: Carousel de Proyectos */}
-      <div className="w-full h-full min-h-[100vh]">
+      <div className="w-full h-full min-h-[100vh] animate-fade-up" style={{ animationDelay: '900ms' }}>
         <Carousel
           items={projectsData.items} 
           renderItem={(project: ProjectItem) => (
             <div className="w-full h-full relative flex items-end p-8 bg-gradient-to-t from-gray-950 via-gray-950/40 to-transparent overflow-hidden">
               <img
                 src={`/images/${project.id}.png`}
-                className="inset-0 w-full h-full object-cover opacity-30 absolute"
+                className="inset-0 w-full h-full object-fill md:object-cover opacity-50 absolute"
                 alt={project.title}
                 onError={(e) => {
                   // Fallback por si no tenés la imagen todavía en public/images/
