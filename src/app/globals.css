@@ -28,7 +28,7 @@ body {
     background-color: transparent; 
     
     /* backdrop-blur-md */
-    backdrop-filter: blur(var(--blur-md));
+    backdrop-filter: blur(var(--blur-sm));
     /*-webkit-backdrop-filter: blur(var(--blur-md));*/ /* Soporte para Safari / iOS */
     
     /* border-b border-gray-900 */
@@ -38,14 +38,21 @@ body {
     background-image: linear-gradient(
       to bottom, 
       rgba(3, 7, 18, 0.4), 
-      rgba(3, 7, 18, 0.2)
+      rgba(3, 7, 18, 0.1),
     );
   }
   /* Podés crear variaciones si querés, por ejemplo una con tono verde neón */
+  .liquid-glass-gray {
+    background-color: rgba(16, 24, 40, 0.5); 
+    backdrop-filter: blur(var(--blur-sm));
+    /*-webkit-backdrop-filter: blur(var(--blur-md));*/ /* Soporte para Safari / iOS ctx.fillStyle = "rgba(3, 7, 18, 0.1)"; // Coincide con tu bg-gray-950*/
+    border: 1px solid theme('colors.gray.800');
+  }
+
   .liquid-glass-green {
-    background-color: rgba(4, 47, 31, 0.2); 
-    backdrop-filter: blur(var(--blur-md));
-    /*-webkit-backdrop-filter: blur(var(--blur-md));*/ /* Soporte para Safari / iOS */
-    border: 1px solid rgba(74, 222, 128, 0.1);
+    background-color: rgba(31, 102, 29, 0.5); 
+    backdrop-filter: blur(var(--blur-sm));
+    /*-webkit-backdrop-filter: blur(var(--blur-md));*/ /* Soporte para Safari / iOS ctx.fillStyle = "rgba(3, 7, 18, 0.1)"; // Coincide con tu bg-gray-950*/
+    border: 1px solid theme('colors.green.300');
   }
 }

@@ -49,6 +49,7 @@ export interface InfoData {
 export interface FooterData {
   title: string;
   subtitle: string;
+  subtitle2: string;
   buttonLabel: string;
   email: string;
   githubLabel: string;

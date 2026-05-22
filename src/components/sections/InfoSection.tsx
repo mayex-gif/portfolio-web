@@ -26,7 +26,7 @@ export default function InfoSection({ infoData }: InfoSectionProps) {
                         {section.items.map((item) => (
                             <div
                                 key={item.id}
-                                className="bg-gray-900 border border-gray-800/60 p-6 rounded-md hover:border-green-500/30 transition-all duration-300 flex flex-col justify-between group"
+                                className="liquid-glass-gray p-6 rounded-md hover:border-green-500/30 transition-all duration-300 flex flex-col justify-between group"
                             >
                                 <div>
                                     <div className="text-xs font-mono text-gray-500 mb-2">{item.year}</div>
