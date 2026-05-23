@@ -19,10 +19,10 @@ export interface ProjectItem {
   id: string;
   title: string;
   description: string;
-  techStack: string[];
-  linkUrlLabel: string;
-  linkUrl?: string; // El "?" significa que es opcional
-  githubUrlLabel: string;
+  techStack?: string[];
+  linkUrlLabel?: string;
+  linkUrl?: string;
+  githubUrlLabel?: string;
   githubUrl?: string;
   category: string;
 }

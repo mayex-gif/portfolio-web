@@ -15,6 +15,14 @@
   "projects": {
     "items": [
       {
+        "id": "cv",
+        "title": "CV - Curriculum Vitae",
+        "description": "",
+        "githubUrlLabel": "View CV",
+        "githubUrl": "/docs/CV - 12-09-25.pdf",
+        "category": "Personal Information"
+      },
+      {
         "id": "tpi-backend",
         "title": "TPI - Backend de Aplicaciones",
         "description": "Diseño e implementación de un ecosistema de microservicios e infraestructura cloud (Spring Cloud Gateway, Keycloak, OSRM, MySQL) para la gestión y ruteo inteligente de solicitudes logísticas, aplicando patrones de arquitectura distribuida y seguridad centralizada basada en tokens.",
@@ -27,11 +35,11 @@
           "Docker",
           "MySQL Workbench"
         ],
-        "linkUrlLabel": "Ver Enunciado",
+        "linkUrlLabel": "View Statement",
         "linkUrl": "/docs/Enunciado TPI - 2025.pdf",
-        "githubUrlLabel": "Código Fuente",
+        "githubUrlLabel": "Source Code",
         "githubUrl": "https://github.com/mayex-gif/TPI-BACKEND",
-        "category": "TPI Universitario"
+        "category": "University Project"
       },
       {
         "id": "roca-blanca-desktop",
@@ -42,11 +50,11 @@
           "Bootstrap",
           "MySQL"
         ],
-        "linkUrlLabel": "Ver App",
+        "linkUrlLabel": "View App",
         "linkUrl": "https://mayex-gif.github.io/Roca-Blanca/",
-        "githubUrlLabel": "Código Fuente",
+        "githubUrlLabel": "Source Code",
         "githubUrl": "https://github.com/mayex-gif/Roca-Blanca",
-        "category": "Desarrollo Web Full-Stack"
+        "category": "Full-Stack Web Development"
       },
       {
         "id": "roca-blanca-phone",
@@ -57,11 +65,11 @@
           "Bootstrap",
           "MySQL"
         ],
-        "linkUrlLabel": "Ver App",
+        "linkUrlLabel": "View App",
         "linkUrl": "https://mayex-gif.github.io/Roca-Blanca/",
-        "githubUrlLabel": "Código Fuente",
+        "githubUrlLabel": "Source Code",
         "githubUrl": "https://github.com/mayex-gif/Roca-Blanca",
-        "category": "Desarrollo Web Full-Stack"
+        "category": "Full-Stack Web Development"
       },
       {
         "id": "cve-tracker-desktop",
@@ -72,11 +80,43 @@
           "Spring Boot",
           "MySQL Workbench"
         ],
-        "linkUrlLabel": "Ver App",
+        "linkUrlLabel": "View App",
         "linkUrl": "",
-        "githubUrlLabel": "Código Fuente",
+        "githubUrlLabel": "Source Code",
         "githubUrl": "https://github.com/mayex-gif/cve_tracker",
         "category": "Ciberseguridad"
+      },
+      {
+        "id": "este-proyecto-desktop",
+        "title": "My Personal Website Portfolio",
+        "description": "This very site you are visiting, developed with React and Tailwind CSS, designed to showcase my projects, education, and interests in a clear and attractive manner.",
+        "techStack": [
+          "React",
+          "Tailwind CSS",
+          "Next.js",
+          "TypeScript"
+        ],
+        "linkUrlLabel": "View App",
+        "linkUrl": "https://alca-alejo.vercel.app/",
+        "githubUrlLabel": "Source Code",
+        "githubUrl": "https://github.com/mayex-gif/portfolio-web",
+        "category": "Full-Stack Web Development"
+      },
+      {
+        "id": "este-proyecto-phone",
+        "title": "My Personal Website Portfolio",
+        "description": "",
+        "techStack": [
+          "React",
+          "Tailwind CSS",
+          "Next.js",
+          "TypeScript"
+        ],
+        "linkUrlLabel": "View App",
+        "linkUrl": "https://alca-alejo.vercel.app/",
+        "githubUrlLabel": "Source Code",
+        "githubUrl": "https://github.com/mayex-gif/portfolio-web",
+        "category": "Full-Stack Web Development"
       }
     ]
   },
@@ -84,14 +124,14 @@
     "infoItems": [
       {
         "id": "01",
-        "title": "Educación",
+        "title": "Education",
         "items": [
           {
             "id": "1",
             "title": "Universidad Tecnológica Nacional - Facultad Regional Córdoba",
             "description": "Ingeniería en Sistemas de Información.",
             "year": "2022 - Actualidad",
-            "linkLabel": "Ver Carrera",
+            "linkLabel": "View Program",
             "linkUrl": "https://www.institucional.frc.utn.edu.ar/sistemas/"
           },
           {
@@ -99,61 +139,61 @@
             "title": "Instituto Superior Manuel de Falla",
             "description": "Técnico en Programación.",
             "year": "2015 - 2021",
-            "linkLabel": "Ver Certificado"
+            "linkLabel": "View Certificate"
           }
         ]
       },
       {
         "id": "02",
-        "title": "Certificaciones",
+        "title": "Certifications",
         "items": [
           {
             "id": "web-full-stack-utn-ba",
             "title": "Web Full-Stack - UTN BA",
             "description": "",
             "year": "2024",
-            "linkLabel": "Ver Certificado"
+            "linkLabel": "View Certificate"
           },
           {
             "id": "yoprogramo",
             "title": "#YoProgramo - Mumuki",
             "description": "",
             "year": "2023",
-            "linkLabel": "Ver Certificado"
+            "linkLabel": "View Certificate"
           },
           {
             "id": "seprogramar",
             "title": "#SéProgramar - Mumuki",
             "description": "",
             "year": "2022",
-            "linkLabel": "Ver Certificado"
+            "linkLabel": "View Certificate"
           }
         ]
       },
       {
         "id": "03",
-        "title": "Intereses",
+        "title": "Interests",
         "items": [
           {
             "id": "Instalador-Electrico-Habilitado",
             "title": "Instalador Eléctrico Habilitado Cat. III",
             "description": "Ministerio Desarrollo Social y Promoción del Empleo.",
             "year": "Diciembre 2025",
-            "linkLabel": "Ver Matrícula"
+            "linkLabel": "View Registration"
           },
           {
             "id": "riesgos-electricos",
             "title": "Riesgos Eléctricos",
             "description": "Superintendencia de Riesgos del Trabajo",
             "year": "Octubre 2021",
-            "linkLabel": "Ver Certificado"
+            "linkLabel": "View Certificate"
           },
           {
             "id": "curso-fotografia",
             "title": "Curso de fotografía",
             "description": "Realizao en Villa La Bolsa, Córdoba.",
             "year": "Abril 2019",
-            "linkLabel": "Ver Certificado"
+            "linkLabel": "View Certificate"
           }
         ]
       }
@@ -162,7 +202,7 @@
   "footer": {
     "title": "Let's Talk!",
     "subtitle": "I am available for my first professional experience in development or cybersecurity. If you have a proposal or just want to connect, don't hesitate to write to me.",
-     "subtitle2": "Contact",
+    "subtitle2": "Contact",
     "buttonLabel": "Send an email",
     "email": "alcaldealejo53@gmail.com",
     "githubLabel": "GitHub",

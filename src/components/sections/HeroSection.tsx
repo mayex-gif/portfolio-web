@@ -16,7 +16,6 @@ export default function HeroSection({ heroData, projectsData }: HeroSectionProps
       <div className="flex flex-col justify-center px-8 md:px-10 min-h-[100vh]">
         <p className="text-green-500 font-mono mb-4 animate-fade-up" style={{ animationDelay: '100ms' }}>{heroData.greeting}</p>
         <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-white mb-2 animate-fade-up" style={{ animationDelay: '300ms' }}>{heroData.name}</h1>
-        {/* Agregado el subtítulo que faltaba renderizar */}
         <h2 className="text-xl md:text-2xl lg:text-2xl font-medium text-gray-300 mb-6 animate-fade-up" style={{ animationDelay: '500ms' }}>{heroData.subtitle}</h2>
         <p className="lg:text-lg text-gray-500 max-w-2xl animate-fade-up" style={{ animationDelay: '700ms' }}>{heroData.description}</p>
       </div>
@@ -45,7 +44,7 @@ export default function HeroSection({ heroData, projectsData }: HeroSectionProps
                 <h4 className="text-2xl font-bold text-white mb-2">{project.title}</h4>
                 <p className="text-gray-400 text-sm mb-3">{project.description}</p>
                 <div className="flex gap-2 flex-wrap">
-                  {project.techStack.map((tech) => (
+                  {project.techStack?.map((tech) => (
                     <span key={tech} className="text-[10px] bg-gray-900 border border-gray-800 text-gray-300 px-2 py-0.5 rounded">
                       {tech}
                     </span>
