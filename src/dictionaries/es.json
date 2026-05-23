@@ -15,6 +15,14 @@
   "projects": {
     "items": [
       {
+        "id": "cv",
+        "title": "CV - Currículum Vitae",
+        "description": "",
+        "githubUrlLabel": "Ver CV",
+        "githubUrl": "/docs/CV-12-09-25.pdf",
+        "category": "Información Personal"
+      },
+      {
         "id": "tpi-backend",
         "title": "TPI - Backend de Aplicaciones",
         "description": "Diseño e implementación de un ecosistema de microservicios e infraestructura cloud (Spring Cloud Gateway, Keycloak, OSRM, MySQL) para la gestión y ruteo inteligente de solicitudes logísticas, aplicando patrones de arquitectura distribuida y seguridad centralizada basada en tokens.",
@@ -77,6 +85,38 @@
         "githubUrlLabel": "Código Fuente",
         "githubUrl": "https://github.com/mayex-gif/cve_tracker",
         "category": "Ciberseguridad"
+      },
+      {
+        "id": "este-proyecto-desktop",
+        "title": "Mi Portfolio Web Personal",
+        "description": "Este mismo sitio que estás visitando, desarrollado con React y Tailwind CSS, diseñado para mostrar mis proyectos, educación e intereses de manera clara y atractiva.",
+        "techStack": [
+          "React",
+          "Tailwind CSS",
+          "Next.js",
+          "TypeScript"
+        ],
+        "linkUrlLabel": "Ver App",
+        "linkUrl": "https://alca-alejo.vercel.app/",
+        "githubUrlLabel": "Código Fuente",
+        "githubUrl": "https://github.com/mayex-gif/portfolio-web",
+        "category": "Desarrollo Web Full-Stack"
+      },
+      {
+        "id": "este-proyecto-phone",
+        "title": "Mi Portfolio Web Personal",
+        "description": "",
+        "techStack": [
+          "React",
+          "Tailwind CSS",
+          "Next.js",
+          "TypeScript"
+        ],
+        "linkUrlLabel": "Ver App",
+        "linkUrl": "https://alca-alejo.vercel.app/",
+        "githubUrlLabel": "Código Fuente",
+        "githubUrl": "https://github.com/mayex-gif/portfolio-web",
+        "category": "Desarrollo Web Full-Stack"
       }
     ]
   },
